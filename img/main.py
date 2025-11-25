@@ -24,6 +24,9 @@ for recipe_file in recipe_files:
     with open(f"data/capewings/recipe/{recipe_file}", "r") as file:
         recipes.append((recipe_file.replace(".json", ""), json.loads("".join(file.readlines()))))
     
+def get_name(item):
+    return item[0]
+
 def get_addition(item):
     if "carpet" in item[1]["addition"]:
         return "2carpet_" + item[1]["addition"][len("minecraft:"):-len("_carpet")]
@@ -33,7 +36,7 @@ def get_addition(item):
         return "3dye_" + item[1]["addition"][len("minecraft:"):-len("_dye")]
     return item[1]["addition"]
 
-recipes.sort(key=get_addition)
+recipes.sort(key=get_name)
 
 draw = ImageDraw.Draw(template)
 
