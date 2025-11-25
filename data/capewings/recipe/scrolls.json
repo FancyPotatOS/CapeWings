@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:elytra",
+  "addition": "minecraft:green_carpet",
+  "template": "#minecraft:wool",
+  "result": {
+    "id": "minecraft:elytra",
+    "components": {
+      "minecraft:item_model": "capewings:scrolls",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_elytra",
+        "asset_id": "capewings:scrolls",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": false,
+        "equip_on_interact": true,
+        "can_be_sheared": false
+      },
+      "minecraft:item_name": {
+        "text": "Scrolls Elytra",
+        "italic": false
+      }
+    },
+    "count": 1
+  }
+}
