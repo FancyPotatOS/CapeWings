@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": "minecraft:elytra",
-  "addition": "minecraft:lime_wool",
+  "addition": "minecraft:light_gray_wool",
   "template": "#minecraft:wool",
   "result": {
     "id": "minecraft:elytra",

@@ -24,7 +24,7 @@ def get_palette(filename):
 
 
 
-ELYTRA_PALETTE = get_palette("elytra.png")
+ELYTRA_PALETTE = get_palette("CapeWingsResourcePack/elytra.png")
 ELYTRA_ITEM_PALETTE_SIZE = len(ELYTRA_PALETTE)
 
 WOOL_ITEMS = [
@@ -82,12 +82,12 @@ WOOL_ITEMS = [
 ## capewings:equipment/*.json
 ## capewings:items/*.json
 
-cape_names = [f.replace(".png", "") for f in os.listdir("assets/capewings/textures/entity/equipment/wings") if f.endswith(".png")]
+cape_names = [f.replace(".png", "") for f in os.listdir("CapeWingsResourcePack/assets/capewings/textures/entity/equipment/wings") if f.endswith(".png")]
 
 relative_pngs = {}
 
 for name in cape_names:
-    relative_pngs[name] = f"assets/capewings/textures/entity/equipment/wings/{name}.png"
+    relative_pngs[name] = f"CapeWingsResourcePack/assets/capewings/textures/entity/equipment/wings/{name}.png"
 
 equipment_format = """{
   "layers": {
@@ -173,30 +173,30 @@ recipe_format = """{
 
 item_index = 0
 for name in cape_names:
-    with open(f"assets/capewings/equipment/{name}.json", "w") as file:
+    with open(f"CapeWingsResourcePack/assets/capewings/equipment/{name}.json", "w") as file:
         file.write(equipment_format.replace("_NAME_", name))
         
-    with open(f"assets/capewings/items/{name}.json", "w") as file:
+    with open(f"CapeWingsResourcePack/assets/capewings/items/{name}.json", "w") as file:
         file.write(item_model_format.replace("_NAME_", name))
         
-    with open(f"assets/capewings/models/item/{name}.json", "w") as file:
+    with open(f"CapeWingsResourcePack/assets/capewings/models/item/{name}.json", "w") as file:
         file.write(model_format.replace("_NAME_", name))
+
+    if not os.path.exists(f"CapeWingsResourcePack/assets/capewings/recipes"):
+        os.mkdir(f"CapeWingsResourcePack/assets/capewings/recipes")
     
-    with open(f"assets/capewings/recipes/{name}.json", "w") as file:
+    with open(f"CapeWingsResourcePack/assets/capewings/recipes/{name}.json", "w") as file:
         file.write(recipe_format.replace("_NAME_", name).replace("_PROPERNAME_", name.title()).replace("_ITEM_", WOOL_ITEMS[item_index]))
     
     palette = get_palette(relative_pngs[name])
-    target_image_name = f"assets/capewings/textures/item/{name}.png"
+    target_image_name = f"CapeWingsResourcePack/assets/capewings/textures/item/{name}.png"
 
     new_palette = []
     for i in range(ELYTRA_ITEM_PALETTE_SIZE):
         new_palette.append(palette[int(len(palette) * (1.0 * i / ELYTRA_ITEM_PALETTE_SIZE))])
     palette = new_palette
 
-    if name == "copper":
-        continue
-
-    shutil.copyfile("elytra.png", target_image_name)
+    shutil.copyfile("CapeWingsResourcePack/elytra.png", target_image_name)
 
     img = Image.open(target_image_name).convert("RGBA")
 

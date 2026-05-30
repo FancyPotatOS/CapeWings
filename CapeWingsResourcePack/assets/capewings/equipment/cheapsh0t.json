@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:cheapsh0t",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

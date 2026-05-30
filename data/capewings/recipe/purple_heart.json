@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": "minecraft:elytra",
-  "addition": "minecraft:blue_carpet",
+  "addition": "minecraft:orange_dye",
   "template": "#minecraft:wool",
   "result": {
     "id": "minecraft:elytra",

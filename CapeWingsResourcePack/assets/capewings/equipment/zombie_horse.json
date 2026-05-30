@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:zombie_horse",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:moonlight_trail",
+        "use_player_texture": true
+      }
+    ]
+  }
+}
