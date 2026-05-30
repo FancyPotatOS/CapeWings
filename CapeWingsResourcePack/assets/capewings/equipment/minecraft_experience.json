@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:minecraft_experience",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

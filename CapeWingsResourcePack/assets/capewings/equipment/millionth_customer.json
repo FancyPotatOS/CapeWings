@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:millionth_customer",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

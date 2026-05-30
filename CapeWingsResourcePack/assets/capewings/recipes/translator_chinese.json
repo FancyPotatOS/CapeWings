@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:elytra",
+  "addition": "minecraft:magenta_dye",
+  "template": "#minecraft:wool",
+  "result": {
+    "id": "minecraft:elytra",
+    "components": {
+      "minecraft:item_model": "capewings:translator_chinese",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_elytra",
+        "asset_id": "capewings:translator_chinese",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": false,
+        "equip_on_interact": true,
+        "can_be_sheared": false
+      },
+      "minecraft:item_name": {
+        "text": "Translator_Chinese Elytra",
+        "italic": false
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+
+textures:
+https://skinmc.net/capes
+
+names:
+https://namemc.com/capes

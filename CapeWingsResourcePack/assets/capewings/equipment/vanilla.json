@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:vanilla",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

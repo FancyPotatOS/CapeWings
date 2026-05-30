@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:mcc_15th_year",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

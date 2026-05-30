@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "capewings:scrolls",
+        "use_player_texture": true
+      }
+    ]
+  }
+}

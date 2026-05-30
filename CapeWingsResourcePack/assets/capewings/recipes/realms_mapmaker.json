@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:elytra",
+  "addition": "minecraft:brown_carpet",
+  "template": "#minecraft:wool",
+  "result": {
+    "id": "minecraft:elytra",
+    "components": {
+      "minecraft:item_model": "capewings:realms_mapmaker",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_elytra",
+        "asset_id": "capewings:realms_mapmaker",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": false,
+        "equip_on_interact": true,
+        "can_be_sheared": false
+      },
+      "minecraft:item_name": {
+        "text": "Realms_Mapmaker Elytra",
+        "italic": false
+      }
+    },
+    "count": 1
+  }
+}
