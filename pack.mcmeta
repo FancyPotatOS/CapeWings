@@ -1,8 +1,8 @@
 {
   "pack": {
     "description": "FancyPotatOS' Cape Wings Datapack",
-    "min_format": [ 101, 1 ],
-    "max_format": 101,
-    "pack_format": 101
+    "min_format": [ 107, 1 ],
+    "max_format": 107,
+    "pack_format": 107
   }
 }
